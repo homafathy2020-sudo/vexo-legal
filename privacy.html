@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — VEXO</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+  :root {
+    --bg:       #080808;
+    --surface:  #111111;
+    --border:   #1E1E1E;
+    --accent:   #C9F53C;
+    --text-1:   #F2F2F2;
+    --text-2:   #7A7A7A;
+    --text-3:   #454545;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text-1);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  /* ── Nav ── */
+  nav {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(8,8,8,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 32px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-brand {
+    font-family: 'DM Mono', monospace;
+    font-weight: 500; font-size: 18px;
+    color: var(--accent); letter-spacing: 2px;
+    text-decoration: none;
+  }
+  .nav-link {
+    font-size: 13px; color: var(--text-2);
+    text-decoration: none; transition: color .2s;
+  }
+  .nav-link:hover { color: var(--accent); }
+
+  /* ── Hero ── */
+  .hero {
+    padding: 80px 32px 48px;
+    max-width: 760px; margin: 0 auto;
+    border-bottom: 1px solid var(--border);
+  }
+  .hero-tag {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px; letter-spacing: 2px;
+    color: var(--accent);
+    background: rgba(201,245,60,0.08);
+    border: 1px solid rgba(201,245,60,0.2);
+    border-radius: 4px;
+    padding: 4px 10px;
+    margin-bottom: 24px;
+  }
+  .hero h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 600; letter-spacing: -1.5px;
+    line-height: 1.15; margin-bottom: 16px;
+  }
+  .hero-meta {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px; color: var(--text-3);
+    letter-spacing: 0.5px;
+  }
+
+  /* ── Content ── */
+  .content {
+    max-width: 760px; margin: 0 auto;
+    padding: 60px 32px 100px;
+  }
+
+  section { margin-bottom: 56px; }
+
+  h2 {
+    font-size: 13px; font-weight: 500;
+    letter-spacing: 2px; text-transform: uppercase;
+    color: var(--accent);
+    font-family: 'DM Mono', monospace;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  p { color: var(--text-2); margin-bottom: 16px; font-weight: 300; }
+  p strong { color: var(--text-1); font-weight: 500; }
+
+  ul {
+    list-style: none; padding: 0;
+    margin-bottom: 16px;
+  }
+  ul li {
+    color: var(--text-2); font-weight: 300;
+    padding: 8px 0 8px 20px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+  }
+  ul li::before {
+    content: '→';
+    position: absolute; left: 0;
+    color: var(--text-3);
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+  }
+  ul li:last-child { border-bottom: none; }
+
+  .highlight-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 2px solid var(--accent);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin: 24px 0;
+  }
+  .highlight-box p { margin: 0; }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* ── Footer ── */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 32px;
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 12px;
+  }
+  footer p { color: var(--text-3); font-size: 12px; margin: 0; }
+  .footer-links { display: flex; gap: 24px; }
+  .footer-links a { color: var(--text-3); font-size: 12px; transition: color .2s; }
+  .footer-links a:hover { color: var(--accent); }
+
+  @media (max-width: 600px) {
+    nav { padding: 14px 20px; }
+    .hero, .content { padding-left: 20px; padding-right: 20px; }
+    footer { padding: 24px 20px; flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">VEXO</a>
+  <a href="terms.html" class="nav-link">Terms of Service →</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-tag">LEGAL</div>
+  <h1>Privacy Policy</h1>
+  <p class="hero-meta">Last updated: April 2026 &nbsp;·&nbsp; Effective immediately</p>
+</div>
+
+<div class="content">
+
+  <section>
+    <h2>Overview</h2>
+    <div class="highlight-box">
+      <p>VEXO is built on a simple principle: <strong>your workout data belongs to you.</strong> We collect only what's necessary to make the app work, we never sell your data, and you can delete everything at any time.</p>
+    </div>
+    <p>This Privacy Policy explains what information VEXO ("we", "us", "our") collects when you use the VEXO AI Fitness Coach app, how we use it, and what rights you have over it.</p>
+  </section>
+
+  <section>
+    <h2>Information We Collect</h2>
+    <p><strong>Account Information</strong></p>
+    <ul>
+      <li>Email address — used to create and identify your account</li>
+      <li>Display name — shown in the app and on your profile</li>
+      <li>Password — stored securely via Firebase Authentication (we never see it in plain text)</li>
+    </ul>
+    <p><strong>Workout Data</strong></p>
+    <ul>
+      <li>Workout sessions: exercises, sets, reps, and weights you log</li>
+      <li>Personal records (PRs) detected during sessions</li>
+      <li>RPE (Rate of Perceived Exertion) feedback you provide</li>
+      <li>Session duration and volume statistics</li>
+    </ul>
+    <p><strong>Preferences</strong></p>
+    <ul>
+      <li>Fitness level (beginner / intermediate / advanced)</li>
+      <li>Weight unit preference (kg or lb)</li>
+      <li>Active training plan</li>
+    </ul>
+    <p>We do <strong>not</strong> collect location data, contacts, camera access, health records, or any biometric data.</p>
+  </section>
+
+  <section>
+    <h2>How We Use Your Data</h2>
+    <ul>
+      <li>To provide, personalise, and improve the AI coaching experience</li>
+      <li>To calculate your activity rings, streaks, and progress metrics</li>
+      <li>To detect plateaus and generate adaptive workout recommendations</li>
+      <li>To sync your data across devices via Firebase cloud storage</li>
+      <li>To allow you to recover your account via email if you forget your password</li>
+    </ul>
+    <p>We do <strong>not</strong> use your data for advertising, sell it to third parties, or share it with any marketing platform.</p>
+  </section>
+
+  <section>
+    <h2>Data Storage &amp; Security</h2>
+    <p>Your data is stored in two places:</p>
+    <ul>
+      <li><strong>On your device</strong> — via AsyncStorage for instant offline access. The app works fully without internet.</li>
+      <li><strong>In the cloud</strong> — via Google Firebase Firestore, protected by strict security rules that ensure only you can access your own data.</li>
+    </ul>
+    <p>All data in transit is encrypted via HTTPS. Firebase applies industry-standard encryption at rest. We apply Firestore security rules that enforce <code style="font-family:'DM Mono',monospace;font-size:13px;color:var(--accent)">request.auth.uid == userId</code> on every read and write — meaning no other user or VEXO employee can access your workout records.</p>
+  </section>
+
+  <section>
+    <h2>Third-Party Services</h2>
+    <p>VEXO uses the following third-party services to operate:</p>
+    <ul>
+      <li><strong>Google Firebase</strong> — authentication and cloud database. <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></li>
+      <li><strong>Expo / React Native</strong> — the app framework. No data is collected by Expo in production builds.</li>
+    </ul>
+    <p>No advertising SDKs, analytics trackers, or data brokers are included in the app.</p>
+  </section>
+
+  <section>
+    <h2>Your Rights</h2>
+    <ul>
+      <li><strong>Access</strong> — you can view all your data inside the app at any time</li>
+      <li><strong>Correction</strong> — you can update your name, fitness level, and preferences in Profile Settings</li>
+      <li><strong>Deletion</strong> — you can request full deletion of your account and all associated data by emailing us</li>
+      <li><strong>Portability</strong> — upon request, we can provide an export of your workout data in JSON format</li>
+    </ul>
+    <p>To exercise any of these rights, contact us at <a href="mailto:privacy@vexo.app">privacy@vexo.app</a>.</p>
+  </section>
+
+  <section>
+    <h2>Children's Privacy</h2>
+    <p>VEXO is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we will delete it promptly.</p>
+  </section>
+
+  <section>
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we will update the "Last updated" date at the top of this page. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+    <p>For significant changes, we will notify users via email or an in-app notice.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>If you have any questions about this Privacy Policy or how we handle your data, please contact us:</p>
+    <div class="highlight-box">
+      <p><strong>VEXO — AI Fitness Coach</strong><br>
+      Email: <a href="mailto:privacy@vexo.app">privacy@vexo.app</a><br>
+      Website: <a href="https://vexo.app">vexo.app</a></p>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 VEXO — AI Fitness Coach. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </div>
+</footer>
+
+</body>
+</html>
