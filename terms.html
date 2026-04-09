@@ -1,261 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms of Service — VEXO</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap');
-
-  :root {
-    --bg:       #080808;
-    --surface:  #111111;
-    --border:   #1E1E1E;
-    --accent:   #C9F53C;
-    --text-1:   #F2F2F2;
-    --text-2:   #7A7A7A;
-    --text-3:   #454545;
-  }
-
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    background: var(--bg);
-    color: var(--text-1);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 16px;
-    line-height: 1.75;
-    min-height: 100vh;
-  }
-
-  nav {
-    position: sticky; top: 0; z-index: 10;
-    background: rgba(8,8,8,0.92);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border);
-    padding: 16px 32px;
-    display: flex; align-items: center; justify-content: space-between;
-  }
-  .nav-brand {
-    font-family: 'DM Mono', monospace;
-    font-weight: 500; font-size: 18px;
-    color: var(--accent); letter-spacing: 2px;
-    text-decoration: none;
-  }
-  .nav-link {
-    font-size: 13px; color: var(--text-2);
-    text-decoration: none; transition: color .2s;
-  }
-  .nav-link:hover { color: var(--accent); }
-
-  .hero {
-    padding: 80px 32px 48px;
-    max-width: 760px; margin: 0 auto;
-    border-bottom: 1px solid var(--border);
-  }
-  .hero-tag {
-    display: inline-block;
-    font-family: 'DM Mono', monospace;
-    font-size: 11px; letter-spacing: 2px;
-    color: var(--accent);
-    background: rgba(201,245,60,0.08);
-    border: 1px solid rgba(201,245,60,0.2);
-    border-radius: 4px;
-    padding: 4px 10px;
-    margin-bottom: 24px;
-  }
-  .hero h1 {
-    font-size: clamp(32px, 5vw, 48px);
-    font-weight: 600; letter-spacing: -1.5px;
-    line-height: 1.15; margin-bottom: 16px;
-  }
-  .hero-meta {
-    font-family: 'DM Mono', monospace;
-    font-size: 12px; color: var(--text-3);
-    letter-spacing: 0.5px;
-  }
-
-  .content {
-    max-width: 760px; margin: 0 auto;
-    padding: 60px 32px 100px;
-  }
-
-  section { margin-bottom: 56px; }
-
-  h2 {
-    font-size: 13px; font-weight: 500;
-    letter-spacing: 2px; text-transform: uppercase;
-    color: var(--accent);
-    font-family: 'DM Mono', monospace;
-    margin-bottom: 20px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid var(--border);
-  }
-
-  p { color: var(--text-2); margin-bottom: 16px; font-weight: 300; }
-  p strong { color: var(--text-1); font-weight: 500; }
-
-  ul {
-    list-style: none; padding: 0;
-    margin-bottom: 16px;
-  }
-  ul li {
-    color: var(--text-2); font-weight: 300;
-    padding: 8px 0 8px 20px;
-    border-bottom: 1px solid var(--border);
-    position: relative;
-  }
-  ul li::before {
-    content: '→';
-    position: absolute; left: 0;
-    color: var(--text-3);
-    font-family: 'DM Mono', monospace;
-    font-size: 13px;
-  }
-  ul li:last-child { border-bottom: none; }
-
-  .highlight-box {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-left: 2px solid var(--accent);
-    border-radius: 8px;
-    padding: 20px 24px;
-    margin: 24px 0;
-  }
-  .highlight-box p { margin: 0; }
-
-  .warning-box {
-    background: rgba(240,96,96,0.05);
-    border: 1px solid rgba(240,96,96,0.2);
-    border-left: 2px solid #F06060;
-    border-radius: 8px;
-    padding: 20px 24px;
-    margin: 24px 0;
-  }
-  .warning-box p { margin: 0; color: var(--text-2); }
-
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-
-  footer {
-    border-top: 1px solid var(--border);
-    padding: 32px;
-    display: flex; align-items: center; justify-content: space-between;
-    flex-wrap: wrap; gap: 12px;
-  }
-  footer p { color: var(--text-3); font-size: 12px; margin: 0; }
-  .footer-links { display: flex; gap: 24px; }
-  .footer-links a { color: var(--text-3); font-size: 12px; transition: color .2s; }
-  .footer-links a:hover { color: var(--accent); }
-
-  @media (max-width: 600px) {
-    nav { padding: 14px 20px; }
-    .hero, .content { padding-left: 20px; padding-right: 20px; }
-    footer { padding: 24px 20px; flex-direction: column; }
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — VEXO</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #080808;
+      color: #e0e0e0;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    .logo { font-size: 28px; font-weight: 800; color: #C9F53C; letter-spacing: 3px; margin-bottom: 8px; }
+    .tagline { font-size: 13px; color: #555; letter-spacing: 1px; margin-bottom: 48px; }
+    h1 { font-size: 26px; font-weight: 700; color: #f2f2f2; margin-bottom: 8px; }
+    .updated { font-size: 13px; color: #555; margin-bottom: 40px; }
+    h2 { font-size: 16px; font-weight: 700; color: #C9F53C; margin-top: 36px; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px; }
+    p { font-size: 15px; color: #aaa; margin-bottom: 14px; }
+    ul { padding-left: 20px; margin-bottom: 14px; }
+    li { font-size: 15px; color: #aaa; margin-bottom: 6px; }
+    a { color: #C9F53C; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .divider { height: 1px; background: #1e1e1e; margin: 40px 0; }
+    .footer { font-size: 13px; color: #444; text-align: center; margin-top: 60px; }
+    .badge { display: inline-block; font-size: 11px; font-weight: 700; color: #080808; background: #C9F53C; border-radius: 4px; padding: 2px 8px; letter-spacing: 1px; margin-bottom: 12px; }
+  </style>
 </head>
 <body>
+  <div class="container">
 
-<nav>
-  <a href="index.html" class="nav-brand">VEXO</a>
-  <a href="privacy.html" class="nav-link">Privacy Policy →</a>
-</nav>
+    <div class="logo">VEXO</div>
+    <div class="tagline">AI-POWERED GYM TRACKER</div>
 
-<div class="hero">
-  <div class="hero-tag">LEGAL</div>
-  <h1>Terms of Service</h1>
-  <p class="hero-meta">Last updated: April 2026 &nbsp;·&nbsp; Effective immediately</p>
-</div>
+    <h1>Terms of Service</h1>
+    <div class="updated">Last updated: April 6, 2026</div>
 
-<div class="content">
+    <p>By downloading or using VEXO, you agree to be bound by these Terms of Service. Please read them carefully before using the app.</p>
 
-  <section>
-    <h2>Agreement</h2>
-    <p>By downloading, installing, or using the VEXO AI Fitness Coach app ("the App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.</p>
-    <p>These Terms constitute a legally binding agreement between you and VEXO ("we", "us", "our").</p>
-  </section>
+    <h2>1. Acceptance of Terms</h2>
+    <p>By creating an account or using VEXO, you confirm that you are at least 13 years of age (or 16 in the EU) and agree to these Terms of Service and our <a href="./privacy.html">Privacy Policy</a>. If you do not agree, please do not use the app.</p>
 
-  <section>
-    <h2>Use of the App</h2>
-    <p>You may use VEXO for personal, non-commercial fitness tracking purposes. By using the App, you agree to:</p>
+    <h2>2. Use of the App</h2>
+    <p>VEXO is provided for personal, non-commercial use only. You agree not to:</p>
     <ul>
-      <li>Provide accurate information when creating your account</li>
-      <li>Keep your login credentials secure and confidential</li>
-      <li>Not attempt to reverse-engineer, copy, or distribute the App</li>
-      <li>Not use the App in any way that violates applicable laws</li>
-      <li>Not attempt to access other users' data or accounts</li>
+      <li>Use the app for any unlawful purpose.</li>
+      <li>Attempt to reverse engineer, modify, or distribute the app or its content.</li>
+      <li>Use automated tools to access or scrape the app.</li>
+      <li>Impersonate any person or entity or misrepresent your affiliation.</li>
+      <li>Attempt to gain unauthorized access to our systems or other users' accounts.</li>
     </ul>
-    <p>You must be at least 13 years old to use VEXO. If you are under 18, you confirm that a parent or guardian has consented to your use of the App.</p>
-  </section>
 
-  <section>
-    <h2>Health Disclaimer</h2>
-    <div class="warning-box">
-      <p><strong style="color:#F06060">Important:</strong> VEXO provides fitness tracking and AI-generated workout recommendations for informational purposes only. The App is not a substitute for professional medical advice, diagnosis, or treatment.</p>
-    </div>
-    <p>Before starting any new exercise programme, consult with a qualified healthcare professional, especially if you have any pre-existing medical conditions, injuries, or health concerns.</p>
-    <p>The AI coaching recommendations in VEXO are based on general exercise science principles (ACSM/NSCA guidelines) and your logged training data. They are not personalised medical advice. You are responsible for exercising within your own limits and seeking professional guidance when needed.</p>
-    <p>We are not liable for any injury, illness, or health issue that may result from following recommendations made by the App.</p>
-  </section>
+    <h2>3. Health &amp; Fitness Disclaimer</h2>
+    <p>VEXO provides fitness tracking and workout suggestions for informational purposes only. The app is <strong>not a substitute for professional medical advice, diagnosis, or treatment.</strong></p>
+    <p>Before starting any exercise program, consult a qualified healthcare professional, especially if you have any pre-existing medical conditions, injuries, or health concerns.</p>
+    <p>VEXO is not responsible for any injury, illness, or health complications that may result from following workout plans or suggestions provided by the app. Use the app at your own risk.</p>
 
-  <section>
-    <h2>Your Account</h2>
-    <p>You are responsible for maintaining the confidentiality of your account credentials. You are responsible for all activity that occurs under your account.</p>
-    <p>You may delete your account at any time by contacting us at <a href="mailto:business4adham@gmail.com">business4adham@gmail.com</a>. Upon deletion, all your personal data will be permanently removed from our servers within 30 days.</p>
-    <p>We reserve the right to suspend or terminate accounts that violate these Terms.</p>
-  </section>
+    <h2>4. Your Account</h2>
+    <p>You are responsible for maintaining the confidentiality of your account credentials. You agree to notify us immediately of any unauthorized use of your account at <a href="/cdn-cgi/l/email-protection#1f697a67707e6f6f2e5f78727e7673317c7072"><span class="__cf_email__" data-cfemail="2355465b4c4253531263444e424a4f0d404c4e">[email&#160;protected]</span></a>.</p>
+    <p>We reserve the right to suspend or terminate accounts that violate these Terms without prior notice.</p>
 
-  <section>
-    <h2>Intellectual Property</h2>
-    <p>The VEXO app, including its AI engines, design, code, graphics, and brand, is owned by VEXO and protected by applicable intellectual property laws.</p>
-    <p>Your workout data remains yours. We claim no ownership over the fitness data you log in the App. You grant us a limited licence to process and store your data solely to provide the App's features to you.</p>
-  </section>
+    <h2>5. Your Data</h2>
+    <p>You retain full ownership of all data you enter into VEXO. By using the app, you grant us a limited, non-exclusive license to store and process your data solely for the purpose of providing the service. We do not claim ownership of your fitness data.</p>
+    <p>You can permanently delete your account and all associated data at any time from Profile → Delete Account, or by contacting us at <a href="/cdn-cgi/l/email-protection#0e786b76616f7e7e3f4e69636f6762206d6163"><span class="__cf_email__" data-cfemail="0771627f686677773647606a666e6b2964686a">[email&#160;protected]</span></a>.</p>
 
-  <section>
-    <h2>Limitation of Liability</h2>
-    <p>To the maximum extent permitted by applicable law, VEXO shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to:</p>
-    <ul>
-      <li>Loss of data due to device failure or account deletion</li>
-      <li>Physical injury arising from use of workout recommendations</li>
-      <li>Interruptions to App availability or service outages</li>
-      <li>Any damages exceeding the amount you paid for the App in the past 12 months</li>
-    </ul>
-    <p>The App is provided "as is" without warranties of any kind, express or implied.</p>
-  </section>
+    <h2>6. Intellectual Property</h2>
+    <p>All content, design, logos, and software in VEXO are owned by VEXO and protected by applicable intellectual property laws. You may not copy, reproduce, or distribute any part of the app without prior written permission.</p>
 
-  <section>
-    <h2>Changes to the App or Terms</h2>
-    <p>We may update the App and these Terms at any time. We will notify you of significant changes via email or in-app notification. Continued use of the App after changes constitutes acceptance of the updated Terms.</p>
-    <p>We may discontinue features, modify pricing, or sunset the App with reasonable notice to users.</p>
-  </section>
+    <h2>7. Limitation of Liability</h2>
+    <p>To the maximum extent permitted by applicable law, VEXO and its creators shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the app, including but not limited to physical injury, data loss, or service interruption.</p>
+    <p>The app is provided "as is" and "as available" without warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
 
-  <section>
-    <h2>Governing Law</h2>
-    <p>These Terms are governed by applicable law. Any disputes arising from these Terms or your use of the App shall be resolved through good-faith negotiation before pursuing formal legal proceedings.</p>
-  </section>
+    <h2>8. EU Users — Consumer Rights</h2>
+    <div class="badge">GDPR — EU / EEA Users</div>
+    <p>If you are a consumer located in the European Union, you may have additional rights under EU consumer protection law, including the right to a remedy if the app does not conform to these Terms. Nothing in these Terms affects your statutory rights as an EU consumer.</p>
+    <p>The European Commission provides an online dispute resolution platform available at <a href="https://ec.europa.eu/consumers/odr" target="_blank">ec.europa.eu/consumers/odr</a>.</p>
 
-  <section>
-    <h2>Contact</h2>
-    <p>For questions about these Terms, please contact us:</p>
-    <div class="highlight-box">
-      <p><strong>VEXO — AI Fitness Coach</strong><br>
-      Email: <a href="mailto:business4adham@gmail.com">business4adham@gmail.com</a><br>
-      Website: <a href="https://vexo.app">vexo.app</a></p>
-    </div>
-  </section>
+    <h2>9. California Users — CCPA</h2>
+    <div class="badge">CCPA — California Users</div>
+    <p>California residents have specific rights regarding their personal information under the California Consumer Privacy Act (CCPA). Please refer to our <a href="./privacy.html">Privacy Policy</a> for full details on your CCPA rights.</p>
+    <p>We do not sell personal information to third parties. California residents may submit CCPA requests to <a href="/cdn-cgi/l/email-protection#e395869b8c829393d2a3848e828a8fcd808c8e"><span class="__cf_email__" data-cfemail="4c3a2934232d3c3c7d0c2b212d2520622f2321">[email&#160;protected]</span></a>.</p>
 
-</div>
+    <h2>10. Brazilian Users — LGPD</h2>
+    <div class="badge">LGPD — Brazil Users</div>
+    <p>Brazilian users have rights under the Lei Geral de Proteção de Dados (LGPD), including the right to access, correct, delete, and port their personal data. Please refer to our <a href="./privacy.html">Privacy Policy</a> for full details. Requests may be submitted to <a href="/cdn-cgi/l/email-protection#cfb9aab7a0aebfbffe8fa8a2aea6a3e1aca0a2"><span class="__cf_email__" data-cfemail="8dfbe8f5e2ecfdfdbccdeae0ece4e1a3eee2e0">[email&#160;protected]</span></a>.</p>
 
-<footer>
-  <p>© 2026 VEXO — AI Fitness Coach. All rights reserved.</p>
-  <div class="footer-links">
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms of Service</a>
-  </div>
-</footer>
+    <h2>11. Changes to Terms</h2>
+    <p>We may update these Terms of Service from time to time. We will notify you by updating the "Last updated" date. Continued use of the app after changes constitutes your acceptance of the updated terms. For material changes, we will make reasonable efforts to notify you within the app.</p>
 
-</body>
-</html>
+    <h2>12. Termination</h2>
+    <p>You may stop using VEXO at any time by deleting your account from within the app. We may terminate or suspend access to the app immediately, without prior notice, for conduct that we believe violates these Terms or is harmful to other users, us, or third parties.</p>
+
+    <h2>13. Governing Law</h2>
+    <p>These Terms shall be go
